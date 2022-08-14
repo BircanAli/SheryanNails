@@ -1,0 +1,74 @@
+@media (max-width: 75em) {
+  /* .hero-img {
+   
+  background-position: center;
+    
+  } */
+}
+
+/*  Break point at 944 px*/
+/* 1rem=1em=16px */
+/* 16px is defoult */
+/* 944px/16= 59em */
+
+/* set font size */
+/* by the begining we set 10px=62.5% for font size and now we set ot again for 8px to make everything smaller */
+/* 8px / 16px = 0.5 = 50% */
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  /* mobile nav */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+  .nav-links {
+    background-color: rgba(255, 255, 255, 0.712);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4.8em;
+    transform: all 0.5s ease-in;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .nav-open .nav-links {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0%);
+  }
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+  .section-tree-header {
+    letter-spacing: -1px;
+  }
+}
+
+@media (max-width: 43em) {
+  html {
+    font-size: 37.5%;
+  }
+
+  .btn:link,
+  .btn:visited {
+    font-size: 1.2rem;
+  }
+}
