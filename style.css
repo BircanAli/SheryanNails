@@ -67,21 +67,19 @@ main {
   width: 100%;
   z-index: 9999;
 }
-.container {
+.container {display: grid;
+  grid-template-columns: 1fr 4fr 2fr;
+  grid-template-rows: 1fr 1fr;
 }
-.social-media-container {
+/* .social-media-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
   align-items: center;
-}
+} */
 .social-media {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
-
-  padding: 1.5em;
   color: #000;
-  /* background-color: #ffccd5; */
   font-size: 1.2rem;
 }
 .social-media-logos {
@@ -89,11 +87,13 @@ main {
   justify-content: flex-end;
   align-items: center;
   margin-right: 2em;
+  
 }
 
 .img-instagram {
-  width: 3rem;
-  height: 3rem;
+ width: 3rem;
+ 
+ 
 }
 .bold {
   /* font-size: 1.2rem; */
@@ -104,16 +104,17 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1em 2em;
+  grid-column: span 2/4;
+ padding: 1em;
 }
 .btn-logo {
- 
+  grid-row: span 2/3 ;
+  padding: 1.4rem;
 }
-.logo-img {
-  width: 5rem;
-  height: 5rem;
+.logo-img{
+  width: 10rem;
+  height: 10rem;
   border-radius: 50%;
-  background-color: transparent;
 }
 
 .logo-icon:link,
@@ -184,8 +185,8 @@ main {
 }
 .hero-img {
   height: 100vh;
-  overflow: hidden;
-  background-position: center;
+ overflow: hidden;
+background-position: center;
   background-image: url(images/Pinkfontcupcoffee6720x4480.jpg);
   background-size: cover;
 }
@@ -258,7 +259,7 @@ main {
   padding: 1.5em;
   text-align: left;
 }
-.btn-container {
+.btn-container{
   display: flex;
   align-items: center;
   gap: 2em;
