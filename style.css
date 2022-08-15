@@ -102,14 +102,18 @@ main {
 }
 .nav {
   display: flex;
-
   justify-content: space-between;
   align-items: center;
-
   margin: 1em 2em;
 }
 .btn-logo {
-  padding: 1.4em;
+ 
+}
+.logo-img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: transparent;
 }
 
 .logo-icon:link,
@@ -180,8 +184,8 @@ main {
 }
 .hero-img {
   height: 100vh;
- overflow: hidden;
-background-position: center;
+  overflow: hidden;
+  background-position: center;
   background-image: url(images/Pinkfontcupcoffee6720x4480.jpg);
   background-size: cover;
 }
@@ -254,7 +258,7 @@ background-position: center;
   padding: 1.5em;
   text-align: left;
 }
-.btn-container{
+.btn-container {
   display: flex;
   align-items: center;
   gap: 2em;
