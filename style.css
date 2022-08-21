@@ -55,27 +55,18 @@ body {
   line-height: 1;
 }
 
-main {
-  /* margin-top: 9rem; */
-}
-
 .header {
-  margin: 0 auto;
-  background-color: #fff0f3;
-  position: fixed;
-  top: 0;
+  background-color: transparent;
+  position: absolute;
   width: 100%;
   z-index: 9999;
 }
-.container {display: grid;
-  grid-template-columns: 1fr 4fr 2fr;
-  grid-template-rows: 1fr 1fr;
-}
-/* .social-media-container {
+.container {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  align-items: center;
-} */
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: 1fr;
+}
+
 .social-media {
   display: flex;
   align-items: center;
@@ -87,31 +78,26 @@ main {
   justify-content: flex-end;
   align-items: center;
   margin-right: 2em;
-  
 }
 
 .img-instagram {
- width: 3rem;
- 
- 
+  width: 3rem;
 }
 .bold {
-  /* font-size: 1.2rem; */
   font-weight: 700;
   margin-left: 2em;
 }
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  grid-column: span 2/4;
- padding: 1em;
+
+  padding: 1em;
 }
 .btn-logo {
-  grid-row: span 2/3 ;
   padding: 1.4rem;
 }
-.logo-img{
+.logo-img {
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
@@ -181,12 +167,11 @@ main {
 }
 .img-container {
   position: relative;
-  margin-top: 8.5em;
 }
 .hero-img {
   height: 100vh;
- overflow: hidden;
-background-position: center;
+  overflow: hidden;
+  background-position: center;
   background-image: url(images/Pinkfontcupcoffee6720x4480.jpg);
   background-size: cover;
 }
@@ -217,7 +202,6 @@ background-position: center;
   font-weight: 700;
   font-size: 1.4rem;
   color: #fff0f3;
-  /* margin: 2em; */
   padding: 1.3em;
   background-color: #800f2f;
   border-radius: 10px;
@@ -243,7 +227,6 @@ background-position: center;
   align-items: center;
   background-color: #d9b8b3;
   border-radius: 10px;
-  /* max-width: 120rem; */
 }
 .client-rev {
   display: flex;
@@ -259,7 +242,7 @@ background-position: center;
   padding: 1.5em;
   text-align: left;
 }
-.btn-container{
+.btn-container {
   display: flex;
   align-items: center;
   gap: 2em;
@@ -319,7 +302,6 @@ div.manicure p {
 }
 .section-two-img img {
   border-radius: 10px;
-  /* height: 40rem; */
   width: 100%;
 }
 
@@ -355,8 +337,6 @@ div.manicure p {
   border: 1px solid #918e8f1a;
   border-radius: 15px;
   box-shadow: 0px 0px 15px #96898b46;
-  /* height: 50rem;
-  width: 40rem; */
   font-family: "Rubik", sans-serif;
 }
 .card:hover {
@@ -405,10 +385,39 @@ div.manicure p {
   margin-bottom: 1em;
   border-bottom: 1px solid #800f2fda;
 }
+.cta-booking {
+  margin: 0 auto;
+  max-width: 120rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  background-color: rgba(221, 221, 221, 0.555);
+  padding: 3.2em;
+  border-radius: 10px;
+}
+.booking-box {
+}
+.booking-form {
+}
+
+.booking-calendar {
+}
+
+.btn-form {
+  text-decoration: none;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #fff0f3;
+  padding: 1.3em;
+  background-color: #800f2f;
+  border-radius: 10px;
+  border: none;
+}
 
 footer {
   font-family: "Montserrat", sans-serif;
-  /* font-size: 1.4rem; */
   font-weight: 400;
   line-height: 1;
   margin-top: 6em;
@@ -482,6 +491,4 @@ footer {
   color: #800f2f;
   border-radius: 10px;
   transition: all 0.2s;
-  /* background-color: #a59e9f1f; */
-  /* box-shadow: 0px 0px 15px #918e8f3a; */
 }
