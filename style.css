@@ -63,24 +63,27 @@ body {
 }
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-columns: 1fr 1fr 4fr;
   grid-template-rows: 1fr;
 }
 
 .social-media {
   display: flex;
+
   align-items: center;
+
   color: #000;
   font-size: 1.2rem;
 }
 .social-media-logos {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+  gap: 1rem;
   margin-right: 2em;
 }
 
-.img-instagram {
+.social-media-icon {
   width: 3rem;
 }
 .bold {
@@ -142,7 +145,7 @@ body {
   background-color: #800f2f;
   border-radius: 10px;
   color: #fff0f3;
-  transition: 0.2s;
+  transition: 0.5s;
 }
 /* mobilen nav menu */
 .btn-mobile-nav {
@@ -185,7 +188,7 @@ body {
 }
 
 .hero-head {
-  font-size: 3.2rem;
+  font-size: 5.2rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   letter-spacing: -0.08rem;
