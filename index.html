@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="icon" href="svg-icons/Logo/logo-1.png" type="image/icon type">
+    <link rel="icon" href="svg-icons/Logo/logo-1.png" type="image/icon type" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="queries.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,29 +31,51 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <script defer src="script.js"></script>
-    
+
     <title>Sheryan Nail Art</title>
   </head>
   <body>
-    <header class="header nav-open">
-      <div class="container">
+    <header id="home" class="header nav-open">
+      <div id="nav" class="container">
         <div class="btn-logo">
-            <!-- logo here -->
-            <a  href="#" id="logo"><img class="logo-img" src="svg-icons/Logo/logo-1.png" alt="" srcset=""></a>
-          </div>
-        
-        
-          <!-- logos [facebook, instagram] -->
-          <div class="social-media-logos">
-            <a  href="https://www.facebook.com/search/top?q=sheryan%20ali%20art%20nails" target="_blank">
-              <img class="social-media-icon" src="svg-icons/Facebook_f_logo_(2019).svg.png" alt="facebook icon image"></a>
-            <a href="https://www.instagram.com/sheryan_ali_art_nails/?hl=en" target="_blank">
-              <img  class="social-media-icon" src="svg-icons/instagram-svgrepo-com.svg" alt="img link to the instagram"></a>
-              <a href="https://www.tiktok.com/@nailsartsheryanali" target="_blank">
-                <img  class="social-media-icon" src="svg-icons/tiktok-round-color-icon.webp" alt="tiktok link to the instagram"></a>
+          <!-- logo here -->
+          <a href="#" id="logo"
+            ><img
+              class="logo-img"
+              src="svg-icons/Logo/logo-1.png"
+              alt=""
+              srcset=""
+          /></a>
         </div>
-         <div class="nav">
+
+        <!-- logos [facebook, instagram] -->
+        <div class="social-media-logos">
+          <a
+            href="https://www.facebook.com/search/top?q=sheryan%20ali%20art%20nails"
+            target="_blank"
+          >
+            <img
+              class="social-media-icon"
+              src="svg-icons/Facebook_f_logo_(2019).svg.png"
+              alt="facebook icon image"
+          /></a>
+          <a
+            href="https://www.instagram.com/sheryan_ali_art_nails/?hl=en"
+            target="_blank"
+          >
+            <img
+              class="social-media-icon"
+              src="svg-icons/instagram-svgrepo-com.svg"
+              alt="img link to the instagram"
+          /></a>
+          <a href="https://www.tiktok.com/@nailsartsheryanali" target="_blank">
+            <img
+              class="social-media-icon"
+              src="svg-icons/tiktok-round-color-icon.webp"
+              alt="tiktok link to the instagram"
+          /></a>
+        </div>
+        <div class="nav">
           <nav class="nav-container">
             <ul class="nav-links">
               <li><a class="nav-link" href="#home">Home</a></li>
@@ -68,73 +94,111 @@
             <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
           </button>
         </div>
-        
-           
+
         <!-- </div> -->
-    
       </div>
     </header>
     <main>
       <section class="hero-section" id="home">
         <!-- added nnewdiv -->
         <div class="img-container">
-          <div class="hero-img" alt="coffee flowers pink image">
-            </div>
-          </div>
-          <div class="hero">
-            <h2 class="hero-head">Wellcome I'am so exited to meet you.</h2>
+          <div class="hero-img" alt="coffee flowers pink image"></div>
+        </div>
+        <div class="hero">
+          <h2 class="hero-head">Wellcome I'am so exited to meet you.</h2>
 
-            <div>
-              <a class="btn" href="#">Book Now</a>
-            </div>
+          <div>
+            <a class="btn" href="#">Book Now</a>
           </div>
-        
+        </div>
       </section>
-      
+
       <section class="section-two" id="services">
-        <!-- <div class="section-item"> -->
+        <div class="section-item">
           <div class="manicure">
-            <div class="service--container">
-              <img src="" alt="" />
-              <h3>Manicure</h3>
-              <div>
-                <p>
-                  Our manicure treatments stimulate nail growth and soften dry,
-                  dull skin.
-                </p>
-              </div>
+            <div>
+              <img
+                class="section-two-img"
+                src="images/At Work6720x4480.jpg"
+                alt="nails"
+              />
             </div>
 
-            <div>
-              <h3>Pedicure</h3>
-              <div>
-                <p>
-                  Pedicure services provide full restoration for your nails with
-                  extra polishing.
-                </p>
-              </div>
+            <div class="step-icon">
+              <img
+                class="section-two-icons"
+                src="png-icons/nail-file.png"
+                alt="file and nail icon"
+              />
+              <h3><span class="divider-line"></span> Manicure</h3>
+              <p>
+                Our manicure treatments stimulate nail growth and soften dry,
+                dull skin.
+              </p>
             </div>
-            <div class="Nail-art">
-              <h3>Nail Art</h3>
-              <div>
-                <p>
-                  Let our nail artists create a stunning and sustainable nail
-                  design for you.
-                </p>
-              </div>
-            </div>
-            <div>
-              <h3>Paraffin Wax</h3>
-              <div>
-                <p>
-                  This is a treatment for hands and feet that complements your
-                  manicure and pedicure.
-                </p>
-              </div>
-            </div>
+          </div>
 
+          <div class="pedicure">
+            <div>
+              <img
+                class="section-two-icons"
+                src="png-icons/pedicure.png"
+                alt="pedicure icon"
+              />
+              <h3><span class="divider-line"></span> Pedicure</h3>
+              <p>
+                Pedicure services provide full restoration for your nails with
+                extra polishing.
+              </p>
+            </div>
+            <div>
+              <img
+                class="section-two-img"
+                src="images/pedicure-artist.jpg"
+                alt="picture with pedicure"
+              />
+            </div>
+          </div>
+          <div class="nail-art">
+            <div>
+              <img
+                class="section-two-img"
+                src="images/Manicure-soft-5399x3038.jpg"
+                alt="nails with beautiful Art"
+              />
+            </div>
+            <div>
+              <img
+                class="section-two-icons"
+                src="png-icons/nail-art.png"
+                alt="painting nails with art skill"
+              />
+              <h3><span class="divider-line"></span> Nail Art</h3>
+              <p>
+                Let our nail artists create a stunning and sustainable nail
+                design for you.
+              </p>
+            </div>
+          </div>
+          <div class="paraffin-wax">
+            <div>
+              <img
+                class="section-two-icons"
+                src="png-icons/wax.png"
+                alt="waxing hands"
+              />
+              <h3><span class="divider-line"></span> Paraffin Wax</h3>
+              <p>
+                This is a treatment for hands and feet that complements your
+                manicure and pedicure.
+              </p>
+            </div>
             <div class="section-two-img">
-              <img src="images/At Work6720x4480.jpg" alt="Photo of nail's" />
+              <img
+                class="section-two-img"
+                src="images/paraffin wax732x549.jpg"
+                alt="paraffin waxing the hands"
+              />
             </div>
           </div>
         </div>
@@ -143,27 +207,42 @@
         <div class="section-one-container">
           <div class="client-rev">
             <h3 class="section-one-heading">Why Our Clients Choose US</h3>
-            <div class="btn-container">
-              <a class="btn btn-about-us" href="Our Team">About Us</a>
-
-              <a class="btn btn-book" href="#">Book Now</a>
+          </div>
+          <article class="review">
+            <div class="img-box">
+              <p id="info">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Itaque, cum. Sequi debitis consequatur nam iure, quae hic.
+                Aperiam, asperiores eius.
+              </p>
+              <img
+                id="person-img"
+                src="images/profil-pic3.jpg"
+                alt="profile pictures"
+              />
             </div>
-          </div>
-          <div class="img-box">
-            <img
-              class="img-hands"
-              src="images/Manicuresoft5399x3038.jpg"
-              alt="hand with beautiful colored nails"
-            />
-          </div>
+            <h4 id="author">Sara Jones</h4>
+            <p id="job">costumer</p>
+            <div class="button-container">
+              <button class="prev-btn">
+                <i class="fa fa-chevron-left"></i>
+              </button>
+              <button class="next-btn">
+                <i class="fa fa-chevron-right"></i>
+              </button>
+            </div>
+          </article>
         </div>
       </section>
       <section class="section-tree" id="ourteam">
         <div class="section-tree-header">
-          <h3>Nice to work with them.</h3>
+          <h3>My Pricing</h3>
         </div>
         <div class="section-tree-items">
-          <div class="card">
+          <div class="section-item">
+            <h4></h4>
+          </div>
+          <!-- <div class="card">
             <img
               class="img-1"
               src="images/Coleg1-3000x2000.jpg"
@@ -182,54 +261,119 @@
             <a href="#" class="link-header">Leyla Ramisova </a>
             <p>Epilation &amp; Depilation</p>
             <a href="#" class="link">facebook address</a>
-          </div>
+          </div>-->
         </div>
       </section>
       <section class="cta-booking">
         <div class="booking-box">
           <div class="booking-form">
-          <h1>Get Your Appointment Here</h1>
-          <p>1234566</p>
-          <form action="">
-            <div>
-              <label for="full-name">Full name</label>
-              <input type="text" id="full-name" placeholder="First and Last" name="full-name" required>
-            </div>
-            <div>
-              <label for="Email">Email address</label>
-              <input type="text" id="Email" placeholder="example@mail.com" name="Email" required>
-            </div>
-            <div>
-              <label for="Phone">Phone number</label>
-              <input type="tel" id="Phone" placeholder="08********" name="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" required>
-            </div>
-            <button class="btn-form">Book Now</button>
-          </form>
+            <h1>Get Your Appointment Here</h1>
+            <p>1234566</p>
+            <form action="">
+              <div>
+                <label for="full-name">Full name</label>
+                <input
+                  type="text"
+                  id="full-name"
+                  placeholder="First and Last"
+                  name="full-name"
+                  required
+                />
+              </div>
+              <div>
+                <label for="Email">Email address</label>
+                <input
+                  type="text"
+                  id="Email"
+                  placeholder="example@mail.com"
+                  name="Email"
+                  required
+                />
+              </div>
+              <div>
+                <label for="Phone">Phone number</label>
+                <input
+                  type="tel"
+                  id="Phone"
+                  placeholder="08********"
+                  name="phone"
+                  pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}"
+                  required
+                />
+              </div>
+              <button class="btn-form">Book Now</button>
+            </form>
+          </div>
         </div>
-      </div>
         <div class="booking-calendar">
           <h1>Our Booking Calendar</h1>
-
         </div>
         <div class="map">
-        <div class="mapouter">
-          <div class="gmap_canvas">
-            <iframe width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=bugaria,kuklen&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style><a href="https://www.embedgooglemap.net">embed google map to website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style>
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe
+                width="400"
+                height="400"
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=bugaria,kuklen&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe
+              ><br /><style>
+                .mapouter {
+                  position: relative;
+                  text-align: right;
+                  height: 100%;
+                  width: 100%;
+                }</style
+              ><a href="https://www.embedgooglemap.net"
+                >embed google map to website</a
+              ><style>
+                .gmap_canvas {
+                  overflow: hidden;
+                  background: none !important;
+                  height: 100%;
+                  width: 100%;
+                }
+              </style>
+            </div>
           </div>
-          </div>
-          </div>
+        </div>
       </section>
     </main>
     <footer>
       <div class="footer-container">
         <div class="footer-logo">
           <h3><a href="#logo" id="location">Social Media</a></h3>
-          <a  href="https://www.facebook.com/search/top?q=sheryan%20ali%20art%20nails" target="_blank">
-            <img class="social-media-icon" src="svg-icons/Facebook_f_logo_(2019).svg.png" alt="facebook icon image">asd</a>
-<a href="https://www.tiktok.com/@nailsartsheryanali" target="_blank">
-              <img  class="social-media-icon" src="svg-icons/tiktok-round-color-icon.webp" alt="tiktok link to the instagram">asd</a>
-          <a href="https://www.instagram.com/sheryan_ali_art_nails/?hl=en" target="_blank">
-            <img  class="social-media-icon" src="svg-icons/instagram-svgrepo-com.svg" alt="img link to the instagram">asd</a>
+          <a
+            href="https://www.facebook.com/search/top?q=sheryan%20ali%20art%20nails"
+            target="_blank"
+          >
+            <img
+              class="social-media-icon"
+              src="svg-icons/Facebook_f_logo_(2019).svg.png"
+              alt="facebook icon image"
+            />asd</a
+          >
+          <a href="https://www.tiktok.com/@nailsartsheryanali" target="_blank">
+            <img
+              class="social-media-icon"
+              src="svg-icons/tiktok-round-color-icon.webp"
+              alt="tiktok link to the instagram"
+            />asd</a
+          >
+          <a
+            href="https://www.instagram.com/sheryan_ali_art_nails/?hl=en"
+            target="_blank"
+          >
+            <img
+              class="social-media-icon"
+              src="svg-icons/instagram-svgrepo-com.svg"
+              alt="img link to the instagram"
+            />asd</a
+          >
           <p>Copyright &copy; <span id="date">2022</span> Birdzhan Ali.</p>
         </div>
         <div class="opening-h">
@@ -252,5 +396,9 @@
         </div>
       </div>
     </footer>
+    <a href="#home" class="scroll-link top-link">
+      <i class="fa fa-arrow-up"></i>
+    </a>
+    <script defer src="script.js"></script>
   </body>
 </html>

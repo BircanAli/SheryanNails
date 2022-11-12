@@ -1,3 +1,10 @@
+/* colors of logo img. 
+#c29f61
+#c29f61
+#c29f61
+#c29f61
+*/
+
 /* 
 ---02 coloors
 #590D22
@@ -97,6 +104,13 @@ body {
 
   padding: 1em;
 }
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+}
 .btn-logo {
   padding: 1.4rem;
 }
@@ -166,8 +180,6 @@ body {
   display: none;
 }
 
-.hero-section {
-}
 .img-container {
   position: relative;
 }
@@ -224,26 +236,20 @@ body {
 }
 
 .section-one-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  align-items: center;
   background-color: #d9b8b3;
   border-radius: 10px;
 }
 .client-rev {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 4em;
+  text-align: center;
   padding: 2em;
 }
 .section-one-heading {
   font-size: 2.6rem;
   font-weight: 700;
-  padding: 1.5em;
-  text-align: left;
+}
+.review {
+  text-align: center;
+  padding: 2em;
 }
 .btn-container {
   display: flex;
@@ -254,13 +260,45 @@ body {
 .img-box {
   display: block;
   margin: 0 auto;
-  padding: 3em;
+  padding: 2em;
 }
 
-.img-hands {
-  box-shadow: 0px 0px 40px rgba(153, 153, 153, 0.4);
-  border-radius: 15px;
-  width: 100%;
+#person-img {
+  border-radius: 50%;
+  width: 8%;
+}
+#info {
+  font-size: 1.8rem;
+  margin-bottom: 2em;
+  line-height: 1.5;
+}
+#author {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.6rem;
+  letter-spacing: 1.6;
+  margin-bottom: 1rem;
+}
+#job {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  color: #800f2f;
+  margin-bottom: 1rem;
+}
+.button-container {
+}
+.prev-btn,
+.next-btn {
+  cursor: pointer;
+  padding: 0.5em;
+  color: white;
+  background-color: #800f2f;
+  border: none;
+}
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: white;
+  color: #800f2f;
+  transition: 0.7s;
 }
 .section-two {
   max-width: 120rem;
@@ -269,43 +307,85 @@ body {
 }
 
 .section-item {
+  background-color: rgba(221, 221, 221, 0.555);
+  border-radius: 10px;
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.74);
+  text-align: center;
+  line-height: 1.8;
 }
 .manicure {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   justify-content: center;
   align-items: center;
-
-  background-color: rgba(221, 221, 221, 0.555);
+  gap: 5%;
   padding: 2em;
-  column-gap: 5%;
-  border-radius: 10px;
 }
+
+.pedicure {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  padding: 2em;
+}
+.nail-art {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  padding: 2em;
+}
+.paraffin-wax {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  padding: 2em;
+}
+.section-two-img {
+  text-align: center;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.section-two-icons {
+  width: 8rem;
+}
+.divider-line {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 6rem;
+  height: 0.3rem;
+
+  background-color: #800f2f;
+}
+
 .service--container {
 }
 .nail-art {
 }
-div.manicure h3 {
+/* div.manicure h3 {
   font-size: 1.8rem;
   color: rgba(0, 0, 0, 0.74);
   text-align: center;
   margin-bottom: 1em;
-}
+} */
 
 div.manicure p {
   font-size: 1.2em;
   text-align: center;
   color: #918e8f;
   line-height: 1;
-}
-.section-two-img {
-  grid-row: 1 / span 2;
-  grid-column: 3 / span 1;
-}
-.section-two-img img {
-  border-radius: 10px;
-  width: 100%;
 }
 
 .section-tree {
@@ -326,7 +406,7 @@ div.manicure p {
   justify-content: center;
   align-items: center;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+
   column-gap: 10%;
   padding: 3.2em;
   width: 80%;
@@ -494,4 +574,26 @@ footer {
   color: #800f2f;
   border-radius: 10px;
   transition: all 0.2s;
+}
+
+.top-link {
+  font-size: 2.25rem;
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  background: #800f2f;
+  width: 6rem;
+  height: 6rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: white;
+  animation: infinite 2s;
+
+  visibility: hidden;
+  z-index: -100;
+}
+.show-link {
+  visibility: visible;
+  z-index: 100;
 }
