@@ -53,6 +53,7 @@ my font size is 62.5% .....
 then 10px = 1rem.....
   */
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
