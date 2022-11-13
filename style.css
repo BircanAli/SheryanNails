@@ -307,7 +307,7 @@ body {
   padding: 3.2em;
 }
 
-.section-item {
+.section-two-item {
   background-color: rgba(221, 221, 221, 0.555);
   border-radius: 10px;
   font-size: 1.8rem;
@@ -382,7 +382,7 @@ body {
   margin-bottom: 1em;
 } */
 
-div.manicure p {
+.section-two-item p {
   font-size: 1.2em;
   text-align: center;
   color: #918e8f;
@@ -391,26 +391,41 @@ div.manicure p {
 
 .section-tree {
   max-width: 120rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin: 0 auto;
+  padding: 3.2em;
 }
 .section-tree-header {
   font-size: 4.2rem;
   margin-bottom: 0.9em;
-  letter-spacing: -4px;
+  text-align: center;
+}
+.section-tree-header p {
+  font-size: 2.2rem;
+  text-align: center;
+  color: #918e8f;
+  line-height: 1;
+}
+.section-tree-info {
+  font-size: 2rem;
+  color: #;
+  padding: 1.2em;
 }
 .section-tree-items {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  grid-template-columns: 1fr 1fr;
-
-  column-gap: 10%;
+  background-color: #dddddd8e;
+  border-radius: 10px;
   padding: 3.2em;
-  width: 80%;
+}
+.section-tree-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.5rem;
+  padding: 1.5em;
+  border-bottom: #918e8f solid 1px;
+}
+.section-tree-item:last-child {
+  border-bottom: none;
 }
 .card {
   display: flex;
