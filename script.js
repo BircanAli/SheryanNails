@@ -1,6 +1,8 @@
 const btnNavEL = document.querySelector(".btn-mobile-nav");
 const headerEL = document.querySelector(".header");
-
+//
+linksContainer = document.querySelector(".nav-container");
+//
 btnNavEL.addEventListener("click", function () {
   headerEL.classList.toggle("nav-open");
 });
@@ -87,3 +89,32 @@ window.addEventListener("scroll", function () {
 
 const date = document.getElementById("date");
 date.innerHTML = new Date().getFullYear();
+
+// select scroll
+
+const scrollLinks = document.querySelectorAll(".nav-link");
+scrollLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    // navigate to specefic spot
+    const id = e.currentTarget.getAttribute("href").slice(1);
+    const element = document.getElementById(id);
+
+    const navHeight = navbar.getBoundingClientRect().height;
+    const containerHeight = linksContainer.getBoundingClientRect().height;
+    const fixedNav = navbar.classList.contains("fixed-nav");
+    let position = element.offsetTop - navHeight;
+
+    if (!fixedNav) {
+      position = position - navHeight;
+    }
+    if (navHeight > 82) {
+      position = position + containerHeight;
+    }
+    window.scroll({
+      left: 0,
+      top: position,
+    });
+    linksContainer.style.height = 0;
+  });
+});
