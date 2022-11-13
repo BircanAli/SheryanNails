@@ -1,7 +1,7 @@
 const btnNavEL = document.querySelector(".btn-mobile-nav");
 const headerEL = document.querySelector(".header");
 //
-linksContainer = document.querySelector(".nav-container");
+const linksContainer = document.querySelector(".nav-container");
 //
 btnNavEL.addEventListener("click", function () {
   headerEL.classList.toggle("nav-open");
@@ -115,6 +115,6 @@ scrollLinks.forEach((link) => {
       left: 0,
       top: position,
     });
-    linksContainer.style.height = 0;
+    headerEL.classList.remove("nav-open");
   });
 });

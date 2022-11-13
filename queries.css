@@ -60,11 +60,6 @@
   .section-tree-header {
     letter-spacing: -1px;
   }
-  .social-media-logos {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-  }
 }
 
 @media (max-width: 43em) {
