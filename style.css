@@ -93,6 +93,7 @@ body {
 
 .social-media-icon {
   width: 3rem;
+  text-align: center;
 }
 .bold {
   font-weight: 700;
@@ -471,8 +472,8 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 2em;
-  text-decoration: none;
 }
+
 .footer-logo h3 a {
   text-decoration: none;
   color: #000;
@@ -528,6 +529,13 @@ footer {
   transition: all 0.2s;
 }
 
+.copyright {
+  grid-area: 2/2;
+  text-align: center;
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
 .top-link {
   font-size: 2.25rem;
   position: fixed;
@@ -548,4 +556,16 @@ footer {
 .show-link {
   visibility: visible;
   z-index: 100;
+}
+
+@media only screen and (max-width: 1500px) {
+  .hero-head {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero-head {
+    font-size: 3rem;
+  }
 }
