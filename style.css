@@ -6,7 +6,7 @@
 */
 
 /* 
----02 coloors
+---02 colors
 #590D22
 #800F2F
 #A4133C
@@ -162,7 +162,7 @@ body {
   color: #fff0f3;
   transition: 0.5s;
 }
-/* mobilen nav menu */
+/* mobile nav menu */
 .btn-mobile-nav {
   border: none;
   background: none;
@@ -401,7 +401,6 @@ body {
 }
 .section-tree-info {
   font-size: 2rem;
-  color: #;
   padding: 1.2em;
 }
 .section-tree-items {
