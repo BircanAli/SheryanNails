@@ -1,7 +1,7 @@
 
 # Project Title
 
-Sheryan Nail Art - landing page for salon or personal page as a beutytion.
+Sheryan Nail Art - landing page for salon or personal page as a beautician.
 
 
 ## 🛠 Skills
